@@ -1,0 +1,76 @@
+# # 1 - Filmes
+# # Declaração implícita:
+# imp = ("Game of Thrones", 9.4)
+# print (imp)
+# print (type (imp))
+
+# #Declaração explícita:
+# exp = tuple(["Game of Thrones", 9.4])
+# print (exp)
+# print (type (exp))
+
+# # 2 – Fatiamento Tuplas
+# # Cria uma tupla com letras de A a H e depois usa o código para obter o seguinte:
+# Fatia = (['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])
+# # Selecionar o primeiro elemento 
+# print (Fatia[0])
+# # Selecionar o último elemento 
+# print (Fatia[-1])
+# # Selecionar do segundo até ao quarto elemento
+# print (Fatia[1:4:1])
+# # Selecionar os três primeiros elementos
+# print (Fatia[0:3:1])
+# # Selecionar os quatro últimos elementos
+# print (Fatia[-4:])
+
+# 3  Verificar se um elemento está na tupla
+# Cria uma tupla com estes filmes e cria o código para verificar se:
+
+# Armageddon está na tupla
+# Game of Thrones não está na tupla
+# friends está na tupla
+
+# # Imprimindo o resultado de cada uma das pesquisas!
+# filmes = ('Black Mirror', 'Breaking Bad', 'Friends', 'Game of Thrones', 'The Big Bang Theory')
+# print ('Armageddon' in filmes) #False
+# print ('Game of Thrones' not in filmes) #False
+# print ('friends' in filmes) #False
+
+# #4  Concatenar 3 listas diferentes
+# a = (1, 2)
+# b = (3, 4)
+# c = (5, 6)
+# print (a + b + c)
+
+# 5  Concatenar 2 listas diferentes - zip
+# Nomes = ('João', 'Ana', 'Paulo', 'Joana')
+# Idades = (17, 45, 48, 14)
+# Resultado = tuple (zip (Nomes, Idades))
+# print (Resultado)
+
+#6  Obter a posição de um elemento numa tupla
+Cinema = ('Sony Pictures', 'Walt Disney', 'Universal Pictures', 'Warner')
+# resposta = input('Qual o estúdio?:')
+# if resposta in Cinema:
+#     print (Cinema.index(resposta))
+# else: print (f'{resposta} não está na tupla')
+
+# # 7  Imprimir elementos de uma tupla
+# n = 0
+# while n < len (Cinema):
+#     print(Cinema[n])
+#     n = n + 1
+
+# for estudio in cinema:
+#     print (estudio) 
+
+# 8  Criar uma tupla de forma iterativa
+lista = []
+tamanho = int(input('Quanto elementos serão lidos?:'))
+n = 1
+while n < tamanho + 1 :
+    elemento = input(f'Entre {n}º elemento:')
+    lista.append(elemento) 
+    n = n + 1
+tupla= tuple (lista)
+print (tupla)

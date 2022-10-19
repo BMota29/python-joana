@@ -1,0 +1,19 @@
+from nis import match
+from random import randint
+resp = 'n'
+while resp != 'SIM':
+    opcao = randint (0,2)
+    if opcao == 0:
+        opcao = 'PEDRA'
+    elif opcao == 1:
+        opcao = 'TESOURA'
+    else : 
+        opcao = 'PAPEL'
+    palpite = input('Introduza o seu palpite PEDRA, PAPEL ou TESOURA:').upper()
+    print (f'{palpite}')
+    if palpite == 'PEDRA' or palpite == 'PAPEL' or palpite == 'TESOURA':
+        if palpite == opcao:
+            print (f'Ambos escolheram {palpite}.Empataram')
+        else:
+            match palpite:
+                case 'PEDRA'

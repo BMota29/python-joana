@@ -1,0 +1,76 @@
+# # # Podemos criar/declarar uma tupla de forma implicita, utilizando ():
+# variavel = 1, 2, 3,'n' # A utilização dos parênteses não é obrigatória, mas é uma boa prática.
+# print(variavel)
+# variavel = (1, 2, 3,'n')
+# print(variavel)
+# # # ou podemos declarar uma tupla de maneira explícita utilizando a função tuple.
+# variavel = tuple([1, 2, 3, 'n'])
+# print(variavel)
+
+# O  uso da vírgula é exigido, pois se tiver apenas um elemento, o tipo de dados é consoante o seu valor
+# é preciso colocar uma vírgula depois para que o Python entenda que se trata de uma tupla. 
+# tupla com apenas um elemento
+# tupla_elemento = 10
+# print(type(tupla_elemento)) # tipo int <class 'int'>
+
+# tupla_elemento = 10,
+# print(type(tupla_elemento))
+# print(tupla_elemento) #(10,) tipo tupla <class 'tuple'>
+# Já no caso de uma tupla vazia, a representação é feita com parêntesis ().
+# tupla_vazia = ()
+# lista_vazia = []
+# print(type(tupla_vazia))
+# print(type(lista_vazia))
+
+# Outra forma de declarar uma tupla é por meio da função tuple(),
+# que converte o valor atribuído numa tupla - declaração explícita
+# texto = 'Teste'
+# tupla = tuple(texto)
+# print(type(tupla))
+# print(texto)  # Teste
+# print(tupla)  # ('T', 'e', 's', 't', 'e')
+
+# Tupla com varios tipos de dados
+# # dados = ('10', 101, True) # —> uma tupla contendo uma string, um inteiro e um objeto booleano
+# print(dados)
+
+# Além disso, outros objetos, como listas e tuplas, podem incluir uma tupla
+# O código abaixo cria uma tupla contendo um inteiro, uma lista, uma tupla e um número float
+# dados = (0, [1, 2, 3], (4, 5, 6), 7.0)
+# print(dados) # retorna a tupla inteira 
+# print(type(dados)) # retorna o seu tipo de dados.
+
+# Indexando e fatiando uma tupla
+# Como uma tupla é uma sequência de objetos, podemos aceder esses objetos por meio da indexação
+# Assim como nas strings, o índice do primeiro elemento é 0, o segundo elemento é 1 e assim por diante.
+# Vamos indexar uma tupla:
+dados = (0, [1, 2, 3], (4, 5, 6), 7.0)
+      #  0      1          2       3
+# print('O primeiro elemento:', dados[0]) # 0
+# print('O último elemento:', dados[-1]) # 7.0
+# print('O tipo de dados do segundo elemento: ', type(dados[1])) # <class 'list'>
+print('O primeiro elemento do segundo índice:', dados[0][0]) # 1
+
+# Indexando e fatiando uma tupla
+# Como uma tupla é uma sequência de objetos, podemos aceder esses objetos por meio da indexação
+# Assim como nas strings, o índice do primeiro elemento é 0, o segundo elemento é 1 e assim por diante.
+# Vamos indexar uma tupla:
+dados = (0, [1, 2, 3], (4, 5, 6), 7.0, 'Python')
+#  índice      0  1  2    0  1  2    1  012345
+#  índice  0      1          2       3       4
+# print('O primeiro elemento:', dados[0]) # 0
+# print('O último elemento:', dados[-1]) # 7.0
+# print('O tipo de dados do segundo elemento: ', type(dados[1])) # <class 'list'>
+print('O primeiro elemento do índice 1:', dados[4][5]) # 1
+
+# Indexando e fatiando uma tupla
+# Como uma tupla é uma sequência de objetos, podemos aceder esses objetos por meio da indexação
+# Assim como nas strings, o índice do primeiro elemento é 0, o segundo elemento é 1 e assim por diante.
+# Vamos indexar uma tupla:
+dados = (0, [1, 2, 3], (4, 5, 6), 7.0, 'Python')
+#  índice      0  1  2    0  1  2    1  012345
+#  índice  0      1          2       3       4
+# print('O primeiro elemento:', dados[0]) # 0
+# print('O último elemento:', dados[-1]) # 7.0
+# print('O tipo de dados do segundo elemento: ', type(dados[1])) # <class 'list'>
+print('O primeiro elemento do índice 1:', dados[4][5]) # 1
