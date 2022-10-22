@@ -22,6 +22,10 @@
 #     for dados_chave, dados_valor in clientes_valor.items():
 #         print(f'\t {dados_chave} = {dados_valor}')
 
+import numbers
+import string
+
+
 aluno = { '1' : {'nome' : 'Joana', 'idade' : 29,'inscrito': True},
           '2' : {'nome' : 'Marta', 'idade' : 29,'inscrito': True}}
 
@@ -46,8 +50,17 @@ aluno = { '1' : {'nome' : 'Joana', 'idade' : 29,'inscrito': True},
 
 #print (len (aluno)) #nr de chaves
 
-aluno ['1']['peso'] = 61
-aluno ['2']['peso'] = 71
+#aluno ['1']['peso'] = 61
+#aluno ['2']['peso'] = 71
 #print (len (aluno)) #
 
-print (aluno)
+#print (aluno)
+
+def print_aluno(peso: string, field: string, value: numbers):
+    aluno[peso][field] = value
+
+
+print_aluno('1', 'peso', 67)
+print_aluno('2', 'peso', 71)
+
+print(aluno)
