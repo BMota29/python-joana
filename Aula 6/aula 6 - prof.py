@@ -7,19 +7,19 @@
 # NOTA: A partir da versão 3.7 do Python, a ordem das chaves no dicionário é garantida
 # como sendo a ordem de inserção.
 
-# aluno = {
-#     'nome': 'joana',
-#     'idade': 17,
-#     'inscrito': True
-#     }
-# print(aluno)
-# print(aluno['nome'])
-# print(aluno['idade'])
-# print(aluno['ano'])
-# print(aluno.get('nome')) # da o valor da chave se existe
-# print(aluno.get('ano')) # retorna None se nao existir
-# print(aluno.get('idade'))
-# print(aluno.get('inscrito'))
+aluno = {
+    'nome': 'joana',
+    'idade': 17,
+    'inscrito': True
+    }
+print(aluno)
+print(aluno['nome'])
+print(aluno['idade'])
+#print(aluno['ano'])
+print(aluno.get('nome')) # da o valor da chave se existe
+#print(aluno.get('ano')) # retorna None se nao existir
+print(aluno.get('idade'))
+print(aluno.get('inscrito'))
 
 # aluno['ano'] = 10
 # print(aluno.get('ano')) 
